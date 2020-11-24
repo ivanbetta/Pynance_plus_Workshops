@@ -1,11 +1,12 @@
 # Pynance+ Workshops
 Python Repository Index
 
+
 - Understanding Python
 
 Pandas
-Numpy
 
+Numpy
 
 MatplotLib
 
