@@ -1,13 +1,13 @@
 # Pynance+ Workshops
 Python Repository Index
 
-# Understanding Python
+- Understanding Python
 Pandas
 Numpy
 MatplotLib
 mlfinlab
  
-# Data Curation
+- Data Curation
 Yahoo Finance!
 Superama
 Banxico Web Scraping
@@ -15,22 +15,22 @@ Quandl
 Inegi
 Attribution Analysis
  
-# Math Methods
+- Math Methods
 Covariance Matrix
 Optimization
  
-# Economic Methods
+- Economic Methods
 Hodrick Prescott
 
-# Supervised Learning 
+- Supervised Learning 
 Google Trends
 Random Forest
  
-# Unsupervised Learning
+- Unsupervised Learning
 Banxico PCA
 Google Trends PCA
 Centroid Based Clustering
 Hierarchical Clustering (MST)
  
-# Deep Learning
+- Deep Learning
 
