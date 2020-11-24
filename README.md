@@ -1,5 +1,7 @@
 # Pynance+ Workshops
-Python Repository Index
+
+
+Repository Index
 
 
 - Understanding Python
