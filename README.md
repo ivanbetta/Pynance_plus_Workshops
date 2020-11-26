@@ -1,4 +1,4 @@
-# Pynance+ Workshops
+# Pynance:heavy_plus_sign: Workshops
 
 
 Repository Index:
