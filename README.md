@@ -26,7 +26,7 @@ Quandl
 Inegi
 
 
--Working with GUI
+- Working with GUI
 
 Attribution Analysis
 
