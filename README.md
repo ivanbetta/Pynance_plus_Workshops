@@ -21,14 +21,19 @@ Yahoo Finance!
 
 Superama
 
-Banxico Web Scraping
-
 Quandl
 
 Inegi
 
+
+-Working with GUI
+
 Attribution Analysis
- 
+
+Banxico Web Scraping
+
+Morning Charts
+
  
 - Math Methods
 
