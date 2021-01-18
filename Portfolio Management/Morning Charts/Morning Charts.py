@@ -381,10 +381,10 @@ if bandera==2:
     else:
         ctend=0
     print(tendencia)
-    '((Traded value/SMA20)-1)*100'
-    if sigval!=0:
+
+    if ctend==5 and sigval!=0:
         print('Next resistance '+str(np.round(sigval,2)))
-    elif sigval!=0:
+    elif ctend==-5 and sigval!=0:
         print('Next support '+str(np.round(sigval,2)))                           
     
     'Print Traded value $'
@@ -473,7 +473,7 @@ else:
                     else:
                         ctend=0
                     p.add_run('\n'+tendencia)
-                    '((Traded value/SMA20)-1)*100'
+
                     if ctend==5 and sigval!=0:
                         p.add_run('\nNext resistance '+str(np.round(sigval,2)))
                     elif ctend==-5 and sigval!=0:
