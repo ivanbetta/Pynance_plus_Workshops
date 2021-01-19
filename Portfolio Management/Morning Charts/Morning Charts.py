@@ -345,7 +345,7 @@ if bandera==2:
     df['Traded Value'] = df['Adj Close']*df['Volume'].rolling(window=2).mean()
     
     'Traded Value SMA21'
-    df['Traded Value SMA21'] = df['Traded Value'].rolling(window=21).mean()
+    df['Traded Value SMA21'] = df['Adj Close']*df['Volume'].rolling(window=21).mean()
     
     '21SMA'
     df['21SMA'] = df['Adj Close'].rolling(window=21).mean()
@@ -425,7 +425,7 @@ else:
         df['Traded Value'] = df['Adj Close']*df['Volume'].rolling(window=2).mean()
         
         'Traded Value SMA21'
-        df['Traded Value SMA21'] = df['Traded Value'].rolling(window=21).mean()
+        df['Traded Value SMA21'] = df['Adj Close']*df['Volume'].rolling(window=21).mean()
         
         '21SMA'
         df['21SMA'] = df['Adj Close'].rolling(window=21).mean()
