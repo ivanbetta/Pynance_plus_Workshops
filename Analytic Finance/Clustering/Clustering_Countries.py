@@ -1,4 +1,5 @@
-#Libraries
+
+# Libraries
 
 import numpy as np
 import pandas as pd
@@ -33,6 +34,7 @@ print(prices_df)
 Calculate average annual percentage return and volatilities
 over a theoretical one year period
 """
+
 returns = prices_df.pct_change().mean() * 252
 returns = pd.DataFrame(returns)
 returns.columns = ['Returns']
@@ -44,6 +46,7 @@ X = data
 distorsions = []
 
 # Elbow Curve graphic
+
 'Draws the elbow curve from 2 to 15 clusters'
 for k in range(2, 15):
     k_means = KMeans(n_clusters=k)
@@ -102,8 +105,9 @@ dendrogram(linkage(vstack([Cluster_points['Vol'],Cluster_points['Ret']]).T,
 plt.tight_layout()
 plt.show()
 
-"""
-References:
-https://www.pythonforfinance.net/2018/02/08/stock-clusters-using-k-means-algorithm-in-python/
-https://nikkimarinsek.com/blog/7-ways-to-label-a-cluster-plot-python
-"""
+
+# References:
+
+'https://www.pythonforfinance.net/2018/02/08/stock-clusters-using-k-means-algorithm-in-python/'
+'https://nikkimarinsek.com/blog/7-ways-to-label-a-cluster-plot-python'
+
