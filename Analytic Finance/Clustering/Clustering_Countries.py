@@ -13,7 +13,7 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 # Read tickets to get the data from Yahoo
 
 'Read Tickers'
-tickers = np.append(pd.read_excel('mapping.xlsx')['Ticker'].values, 'ACWI')
+tickers = np.append(pd.read_excel('Mapping Countries.xlsx')['Ticker'].values, 'ACWI')
 prices_list = []
 
 'Get the data from yahoo and put it in DataFrame'
