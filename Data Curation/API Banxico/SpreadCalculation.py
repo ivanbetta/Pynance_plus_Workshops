@@ -47,8 +47,8 @@ def spreadb(arr):
 
                 result["Data1"]=pd1["r"]-pd2["r"]
                 result["Media"]=result["Data1"].mean()
-                result["Std+"]=result["Media"]+2*result["Data1"].std()
-                result["Std-"]=result["Media"]-2*result["Data1"].std()
+                result["Std+"]=result["Media"]+1.5*result["Data1"].std()
+                result["Std-"]=result["Media"]-1.5*result["Data1"].std()
                 fig, ax1 = plt.subplots()
                 plt.title(arr[i]+ " y "+ arr[j])
                 color = '#006d91'                
@@ -128,9 +128,14 @@ for i in range(len(dfb["Serieplimp"])):
         #Using quantlib to manipulate dates easily and splitting string dates
 
         #Looping in the data individually per bond|
-        for j in range(len(datapl["dato"])-datasize+10):
+        for j in range(len(datapl["dato"])):#datasize+10):
             if j==0 :
+                ws = wb[dfb["Bono"][i]] 
+                for row in ws['A2:G10666']:
+                    for cell in row:
+                        cell.value = None                
                 ws = wb["Bonos"]  
+
                 ws.cell(row=2+j+i, column=5).value=datapl["fecha"][datasize-j]+ timedelta(datapzo["dato"][datasize-j])
                 diai=int(dfb["Day"][i])
                 messi=int(dfb["Month"][i])
